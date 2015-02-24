@@ -1,0 +1,64 @@
+/* =Structure/Scaffolding
+-------------------------------------------------------------- */
+html {
+
+}
+body {
+    //@include  baseline-grid();
+}
+#page {
+
+}
+.site-content {
+
+}
+.col-full {
+    @include outer-container;
+    @include clearfix;
+    padding: 0 1em;
+    @include media ($large-screen-up) {
+        padding: 0;
+    }
+}
+
+.right-sidebar {
+    .content-area {
+        @include span-columns(9);
+    }
+
+    .widget-area {
+        @include span-columns(3);        
+    }
+}
+
+.left-sidebar {
+    @include direction-context(right-to-left) {   
+        .content-area {
+            @include span-columns(9);
+            float: right;
+        }
+    }
+    .widget-area {
+        @include span-columns(3);        
+        float: left;
+    }
+}
+
+.without-sidebar {
+    .content-area {
+        @include fill-parent;
+    }
+}
+.right-sidebar, .left-sidebar {
+    @include media ($large-screen-down) {
+        .content-area {
+            @include fill-parent;
+        }
+
+        .widget-area {
+            margin-top: 2em;
+            @include fill-parent;
+        }           
+
+    }
+}

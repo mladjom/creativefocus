@@ -1,0 +1,217 @@
+/* =Content
+----------------------------------------------- */
+.site-main {
+    @include outer-container;
+
+    .page-header {
+        padding: 0 10em;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    .taxonomy-description {
+        font-size: $h5-font-size;
+
+    }
+    .articles {
+        @include clearfix;
+        background: $lighter-gray;
+        margin: 0 0 3em;
+        .col-1 {
+            @include span-columns(12);
+            @include omega(1n);            
+        }
+        .col-2 {
+            @include span-columns(6);
+            @include omega(2n);            
+        }
+        .col-3 {
+            @include span-columns(4);
+            @include omega(3n);            
+        }
+        article.col-2, article.col-3, article.col-1  {
+            @include pad();
+            @include media ($large-screen-down) {
+                @include span-columns(12);
+                @include omega(1n);            
+            }
+
+        }
+        .wp-post-image {
+            height: auto;
+            margin-bottom: .5em;
+        }
+        .entry-header {
+            .entry-title {
+                font-size: $h4-font-size;
+                margin-top: .5em;
+                >  a {
+                    color: $dark-gray;
+                    &:hover {
+                        color: $base-link-color;
+                    }
+                }
+            }
+        }
+        .sticky {
+            background: $primary-color;
+            color: white;
+            a {
+                color: white;
+            }
+            .entry-header {
+                .entry-title {
+                    >  a {
+                        color: white;
+                        &:hover {
+                            color: $medium-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Pagination
+ */
+.site-main [class*="navigation"] {
+    //overflow: hidden;
+    .nav-links {
+        min-height: 2.5em;
+        position: relative;
+        text-align: center;
+
+        a {
+            border-radius: $base-border-radius;
+            border: 1px solid $base-border-color;
+            outline: none;
+            padding: ($base-spacing / 4) ($gutter / 2);
+
+            &:hover,
+                &:focus {
+                /*        background: $pagination-hover-background;
+                        color: $base-link-color;*/
+            }
+
+            &:active {
+                /*        background: $pagination-background;*/
+            }
+
+
+        }       
+        .current {
+            border-radius: $base-border-radius;
+            border: 1px solid $base-border-color;
+            outline: none;
+            padding: ($base-spacing / 4) ($gutter / 2);
+            font-weight: 700;
+        }  
+    }
+
+
+
+
+
+
+    .nav-previous {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    .nav-next {
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
+
+}
+
+.entry-meta, .comment-metadata, .reply, .logged-in-as {
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.cat-links,
+.tags-links,
+.comments-link,
+.edit-link {
+    margin-right: 2em;
+    margin-bottom: 1em;
+    &:before {
+        content: "\f114";
+        font-family: "FontAwesome";
+        margin-right: .5em;
+        display: inline-block;
+        width: 1em;
+    }
+}
+
+.tags-links {
+    &:before {
+        content: "\f02b";
+    }
+}
+
+.comments-link {
+    &:before {
+        content: "\f0e5";
+    }
+}
+
+.edit-link {
+    &:before {
+        content: "\f040";
+    }
+}
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+.aligncenter {
+    @include clearfix;
+    float: none;
+    margin-top: .5em;
+    margin-right: auto!important;
+    margin-bottom: .5em;
+    margin-left: auto!important;
+}
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.single {
+    .hentry {
+        margin-bottom: 2.25em;
+        .entry-header {
+            padding: 0 1em;
+            text-align: center;
+            margin-bottom: 1.5em;
+            .entry-meta {
+                .byline, .posted-on {           
+                    border-bottom: 1px solid;
+                }
+                display: inline-block;
+
+            }       
+        }
+        .byline {
+            display: inline;
+        }
+        .entry-content {
+
+        }
+        hr {
+            width: 3em;
+        }
+    }
+}

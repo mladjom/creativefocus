@@ -1,0 +1,55 @@
+/**
+ * Comments
+ */
+#comments {
+    padding-top: 2.25em;
+
+    .comments-title {
+        border-bottom: 1px dotted $base-border-color;
+        font-size: $h3-font-size;
+        padding-bottom: .5em;
+        margin-bottom: 1em;
+    }
+
+    .comment-list {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        ol {
+            list-style: none;
+        }
+        .comment-body {
+            border-bottom: 1px solid $base-border-color;
+            display: table;
+            margin-bottom: $base-spacing;
+            padding-bottom: 1em;
+            width: 100%;
+        }
+        .bypostauthor {
+            b {
+                &:after {
+                    font-family: "FontAwesome";
+                    font-weight: 400;
+                    margin-left: .53em;
+                    content: "\f097";
+                }
+            }
+        }
+        .comment-meta {
+            @include clearfix();
+            margin-bottom: $base-spacing;
+            .avatar {
+                margin-right: 1.5em;
+                max-width: 56px;
+                height: auto;
+                float: left;
+            }
+            .edit-link {
+                display: inline;
+                margin-bottom: 0;
+                margin-left: 1em;
+            }
+        }
+    }
+}
+
