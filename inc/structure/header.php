@@ -51,7 +51,7 @@ if (!function_exists('creativefocus_primary_navigation')) {
 if (!function_exists('creativefocus_search')) {
 
     /**
-     * Display Secondary Navigation
+     * Display Search
      * @since  1.0.0
      * @return void
      */

@@ -8,6 +8,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+
 Creative Focus is Minimal, Responsive, Developer Friendly WordPress Theme with Clean and Modern Layout
 
 == Installation ==
