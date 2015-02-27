@@ -62,3 +62,11 @@ body {
 
     }
 }
+/**
+ * Full width template
+ */
+.page-template-template-fullwidth-php {
+    .content-area {
+        @include fill-parent;
+    }
+}

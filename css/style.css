@@ -718,6 +718,12 @@ input[type="submit"] {
     margin-top: 2em;
     width: 100%; } }
 
+/**
+ * Full width template
+ */
+.page-template-template-fullwidth-php .content-area {
+  width: 100%; }
+
 /*********************
 VARIABLES
 **********************/
@@ -1070,7 +1076,7 @@ header.site-header {
     display: table;
     clear: both; }
   .site-main .page-header {
-    padding: 0 10em;
+    padding: 0 1em;
     text-align: center;
     margin-bottom: 3em; }
   .site-main .taxonomy-description {

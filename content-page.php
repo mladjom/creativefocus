@@ -17,7 +17,4 @@
     do_action('creativefocus_page');
     ?>
 
-
-
-
 </article><!-- #post-## -->
