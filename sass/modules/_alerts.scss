@@ -1,0 +1,6 @@
+.error {
+    @extend %flash-error;
+}
+.success {
+    @extend %flash-success;
+}

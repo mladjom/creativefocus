@@ -413,6 +413,27 @@ input[type="submit"] {
     cursor: not-allowed;
     opacity: 0.5; }
 
+.error, .success {
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  padding: 0.75em; }
+
+.error {
+  background: #FBE3E4;
+  color: #96151b; }
+  .error a {
+    color: #6a0f13; }
+    .error a:hover {
+      color: #110203; }
+
+.success {
+  background: #E6EFC2;
+  color: #56651a; }
+  .success a {
+    color: #333c10; }
+    .success a:hover {
+      color: black; }
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=#4.1.0");
@@ -1525,17 +1546,6 @@ object {
     background-color: #f1f1f1;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); }
-
-#sharrre {
-  margin: 0 0 1em; }
-  #sharrre:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.sharrre .button {
-  float: left;
-  width: 60px; }
 
 /*--------------------------------------------------------------
 3.0 Dev

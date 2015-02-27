@@ -10,7 +10,6 @@
 1.0 Normalize/Reset
 --------------------------------------------------------------*/
 @import "partials/normalize";
-@import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
 1.0 Bourbon, Bitters, Neat
@@ -18,7 +17,7 @@
 @import "bourbon/bourbon";
 @import "base/grid-settings";
 @import "neat/neat";
-@import "base/base";
+@import "base/base"; 
 
 /*--------------------------------------------------------------
 3.0 Layout and Structure
@@ -39,7 +38,7 @@
 
 @import "partials/accessibility";
 
-@import "partials/social";
+@import "modules/alerts";
 
 /*--------------------------------------------------------------
 3.0 Dev
