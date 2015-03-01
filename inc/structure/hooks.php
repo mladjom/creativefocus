@@ -32,6 +32,14 @@ add_action('creativefocus_header', 'creativefocus_search', 40);
  * @see  creativefocus_credit()
  */
 add_action('creativefocus_footer', 'creativefocus_credit', 10);
+
+/**
+ * Homepage
+ * @see  creativefocus_homepage_content()
+ */
+add_action('homepage', 'creativefocus_homepage_content', 10);
+
+
 /**
  * Posts
  * @see  creativefocus_post_header()

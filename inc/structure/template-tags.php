@@ -16,10 +16,21 @@ if ( ! function_exists( 'creativefocus_get_sidebar' ) ) {
 		get_sidebar();
 	}
 }
+if ( ! function_exists( 'creativefocus_homepage_content' ) ) {
+	/**
+	 * Display homepage content
+	 * Hooked into the `homepage` action in the homepage template
+	 * @since  1.0.0
+	 * @return  void
+	 */
+	function creativefocus_homepage_content() {
+		while ( have_posts() ) : the_post();
 
+			get_template_part( 'content', 'page' );
 
-
-
+		endwhile; // end of the loop.
+	}
+}
 
 if (!function_exists('the_archive_title')) :
 
