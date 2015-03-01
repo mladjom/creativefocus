@@ -25,8 +25,7 @@
 			/**
 			 * @hooked creativefocus_site_branding - 10
 			 * @hooked creativefocus_primary_navigation - 20
-			 * @hooked creativefocus_header_cart - 30
-			 * @hooked creativefocus_search - 40
+			 * @hooked creativefocus_search - 30
 			 */
 			do_action( 'creativefocus_header' ); ?>               
                 </div>
