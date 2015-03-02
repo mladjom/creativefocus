@@ -612,7 +612,6 @@ select {
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
-  table-layout: fixed;
   width: 100%; }
 
 th {
