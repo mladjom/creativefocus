@@ -1,3 +1,7 @@
+### 1.0.2: march 4th, 2015
+* CSS tweaks
+* Homepage page template
+
 ### 1.0.1: February 26th, 2015
 * CSS tweaks
 * Updated default options
