@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 1088; /* pixels */
+	$content_width = 1140; /* pixels */
 }
 
 if ( ! function_exists( 'creativefocus_setup' ) ) :
@@ -47,7 +47,7 @@ function creativefocus_setup() {
 	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 1088, 9999, false );
+	set_post_thumbnail_size( 1140, 9999, false );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

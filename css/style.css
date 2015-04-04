@@ -1248,7 +1248,8 @@ header.site-header {
   margin-top: .5em;
   margin-right: auto !important;
   margin-bottom: .5em;
-  margin-left: auto !important; }
+  margin-left: auto !important;
+  text-align: center; }
   .aligncenter:after {
     content: "";
     display: table;

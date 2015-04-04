@@ -29,6 +29,13 @@ if (!function_exists('creativefocus_page_content')) {
     function creativefocus_page_content() {
         ?>
         <div class="entry-content" itemprop="mainContentOfPage">
+            <?php
+            if (has_post_thumbnail()) {
+                echo '<figure class="aligncenter">';
+                the_post_thumbnail('post-thumbnail', array('itemprop' => 'image', 'alt' => get_the_title()));
+                echo '</figure>';
+            }
+            ?>
             <?php the_content(); ?>
             <?php
             wp_link_pages(array(
@@ -52,7 +59,7 @@ if (!function_exists('creativefocus_page_footer')) {
     function creativefocus_page_footer() {
         ?>
         <footer class="entry-footer">
-        <?php edit_post_link(__('Edit', 'creativefocus'), '<span class="edit-link">', '</span>'); ?>
+            <?php edit_post_link(__('Edit', 'creativefocus'), '<span class="edit-link">', '</span>'); ?>
         </footer><!-- .entry-footer -->
 
         <?php

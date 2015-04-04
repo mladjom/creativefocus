@@ -26,7 +26,7 @@ add_action('creativefocus_sidebar', 'creativefocus_get_sidebar', 10);
  */
 add_action('creativefocus_header', 'creativefocus_site_branding', 10);
 add_action('creativefocus_header', 'creativefocus_primary_navigation', 20);
-add_action('creativefocus_header', 'creativefocus_search', 40);
+add_action('creativefocus_header', 'creativefocus_search', 30);
 /**
  * Footer
  * @see  creativefocus_credit()
