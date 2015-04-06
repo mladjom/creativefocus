@@ -40,7 +40,7 @@ if (!function_exists('creativefocus_primary_navigation')) {
     function creativefocus_primary_navigation() {
         ?>
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle" aria-controls="menu" aria-expanded="false"></button>
+            <button class="menu-toggle"></button>
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
         </nav><!-- #site-navigation -->
         <?php

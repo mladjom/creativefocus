@@ -652,6 +652,19 @@ dl {
   dl dd {
     margin: 0; }
 
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -0.375em; }
+  .list-inline > li {
+    display: inline-block;
+    padding-left: 0.375em;
+    padding-right: 0.375em; }
+
 button,
 input[type="submit"] {
   -webkit-appearance: none;
@@ -1409,7 +1422,8 @@ object {
     display: none; }
   .widget ul {
     margin-left: 0;
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
     .widget ul ul {
       margin-left: 1.5em; }
 
