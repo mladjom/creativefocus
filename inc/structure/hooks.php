@@ -73,4 +73,4 @@ add_action('creativefocus_comments_after', 'creativefocus_comments_nav', 10);
 add_action('creativefocus_page', 'creativefocus_page_header', 10);
 add_action('creativefocus_page', 'creativefocus_page_content', 20);
 add_action('creativefocus_page', 'creativefocus_page_footer', 30);
-add_action('creativefocus_page_after', 'creativefocus_display_comments', 10);
+add_action('creativefcus_page_after', 'creativefocus_display_comments', 10);
