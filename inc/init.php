@@ -34,7 +34,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Customizer additions.
  */
-if (is_creativefocus_customizer_enabled()) {
+if (creativefocus_customizer_enabled()) {
     require get_template_directory() . '/inc/customizer/customizer.php';
 }
 

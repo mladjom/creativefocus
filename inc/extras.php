@@ -10,9 +10,9 @@
 /**
  * Check whether the Creativefocus Customizer settings ar enabled
  * @return boolean
- * @since  1.1.2
+ * @since  1.0.3
  */
-function is_creativefocus_customizer_enabled() {
+function creativefocus_customizer_enabled() {
     return apply_filters('creativefocus_customizer_enabled', true);
 }
 

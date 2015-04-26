@@ -212,7 +212,8 @@ header.site-header {
         @include media ($large-screen-down) {
             display:table;
             position:absolute;
-            top:0.75em;
+            //top:0.75em;
+            margin-top:0.75em;
             right:15px;
             @include button(flat, $dark-gray);
             line-height: 1.5;
@@ -287,9 +288,8 @@ header.site-header {
         @include media ($large-screen-down) {
             display:table;
             position:absolute;
-            top:0.75em;
+            margin-top:0.75em;
             right:5em;
-            margin: 0px;
 
         }
     }

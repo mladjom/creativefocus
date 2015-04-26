@@ -1,11 +1,11 @@
 === Creative Focus ===
 Contributors: Mladjo
-Tags: black, white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready, accessibility-ready, microformats
+Tags: black, white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready, accessibility-ready, microformats, translation-ready
 Requires at least: 4.1
-Tested up to: 4.1
-Stable tag: 4.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.2
+Stable tag: 1.0.3
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
