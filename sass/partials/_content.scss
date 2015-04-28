@@ -57,13 +57,16 @@
             color: white;
             a {
                 color: white;
+                &:hover {
+                    color: $lighter-gray;
+                }
             }
             .entry-header {
                 .entry-title {
                     >  a {
                         color: white;
                         &:hover {
-                            color: $medium-gray;
+                            color: $lighter-gray;
                         }
                     }
                 }
@@ -128,7 +131,7 @@
 
 }
 
-.entry-meta, .comment-metadata, .reply, .logged-in-as {
+.entry-meta, .comment-metadata, .reply, .logged-in-as, .more-link {
     font-size: 0.7em;
     font-weight: 700;
     text-transform: uppercase;

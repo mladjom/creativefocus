@@ -39,8 +39,8 @@ if (!function_exists('creativefocus_primary_navigation')) {
      */
     function creativefocus_primary_navigation() {
         ?>
-               <button class="menu-toggle"></button>
-     <nav id="site-navigation" class="main-navigation" role="navigation">
+        <button class="menu-toggle" aria-controls="menu" aria-expanded="false"></button>
+        <nav id="site-navigation" class="main-navigation" role="navigation">
             <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
         </nav><!-- #site-navigation -->
         <?php
@@ -57,9 +57,9 @@ if (!function_exists('creativefocus_search')) {
      */
     function creativefocus_search() {
         ?>
- 
+
         <div class="search-toggle">
-            <a href="#search-container" class="screen-reader-text"><?php _e('Search', 'creativefocus'); ?></a>
+            <button href="#search-container" class="screen-reader-text"><?php _e('Search', 'creativefocus'); ?></button>
         </div>
         <div id="search-container" class="search-box-wrapper hide">
             <div class="search-box">

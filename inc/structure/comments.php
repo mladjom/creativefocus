@@ -2,7 +2,7 @@
 /**
  * Template functions used for the site comments.
  *
- * @package storefront
+ * @package creativefocus
  */
 if (!function_exists('creativefocus_display_comments')) {
 
@@ -69,10 +69,10 @@ if ( ! function_exists( 'creativefocus_comment' ) ) {
 		<div class="comment-meta commentmetadata">
 			<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 56 ); ?>
-			<?php printf( __( '<cite class="fn">%s</cite>', 'storefront' ), get_comment_author_link() ); ?>
+			<?php printf( __( '<cite class="fn">%s</cite>', 'creativefocus' ), get_comment_author_link() ); ?>
 			</div>
 			<?php if ( $comment->comment_approved == '0' ) : ?>
-				<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'storefront' ); ?></em>
+				<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'creativefocus' ); ?></em>
 				<br />
 			<?php endif; ?>
 
@@ -88,7 +88,7 @@ if ( ! function_exists( 'creativefocus_comment' ) ) {
 
 		<div class="reply">
 		<?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-		<?php edit_comment_link( __( 'Edit', 'storefront' ), '  ', '' ); ?>
+		<?php edit_comment_link( __( 'Edit', 'creativefocus' ), '  ', '' ); ?>
 		</div>
 		</div>
 		<?php if ( 'div' != $args['style'] ) : ?>

@@ -10,7 +10,7 @@
     }
 
     .widget-search .search-submit {
-        display: none;
+        @include screen-reader-text();
     }
 
     h3 {

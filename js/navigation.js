@@ -6,7 +6,7 @@
 jQuery(document).ready(function ($) {
     $('.menu-toggle').click(function () {
         $('nav').toggleClass('active');
-    });
+   });
 
     $('nav ul li ul').each(function () {
         $(this).before('<span class=\"arrow\"></span>');

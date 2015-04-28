@@ -35,7 +35,7 @@ function creativefocus_customize_register($wp_customize) {
         'label' => __('General layout', 'creativefocus'),
         'section' => 'creativefocus_layout',
         'settings' => 'creativefocus_layout',
-       'priority' => 1,
+        'priority' => 1,
     )));
     /**
      * Blog Columns
@@ -102,7 +102,7 @@ if (!function_exists('creativefocus_sanitize_layout')) {
  * Layout classes
  * Adds 'right-sidebar' 'left-sidebar' and without-sidebar classes to the body tag
  * @param  array $classes current body classes
- * @return string[]          modified body classes
+ * @return string[] modified body classes
  * @since  1.0.0
  */
 function creativefocus_layout_class($classes) {
@@ -162,7 +162,7 @@ function creativefocus_blog_columns_class($classes) {
         $layout = '1';
     }
 
-    $classes[] = 'col-'. $layout  ;
+    $classes[] = 'col-' . $layout;
 
     return $classes;
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom template tags for this theme.
  *
@@ -6,31 +7,60 @@
  *
  * @package creativefocus
  */
-if ( ! function_exists( 'creativefocus_get_sidebar' ) ) {
-	/**
-	 * Display storefront sidebar
-	 * @uses get_sidebar()
-	 * @since 1.0.0
-	 */
-	function creativefocus_get_sidebar() {
-		get_sidebar();
-	}
-}
-if ( ! function_exists( 'creativefocus_homepage_content' ) ) {
-	/**
-	 * Display homepage content
-	 * Hooked into the `homepage` action in the homepage template
-	 * @since  1.0.0
-	 * @return  void
-	 */
-	function creativefocus_homepage_content() {
-		while ( have_posts() ) : the_post();
+if (!function_exists('creativefocus_get_sidebar')) {
 
-			get_template_part( 'content', 'page' );
+    /**
+     * Display creativefocus sidebar
+     * @uses get_sidebar()
+     * @since 1.0.0
+     */
+    function creativefocus_get_sidebar() {
+        get_sidebar();
+    }
 
-		endwhile; // end of the loop.
-	}
 }
+if (!function_exists('creativefocus_homepage_content')) {
+
+    /**
+     * Display homepage content
+     * Hooked into the `homepage` action in the homepage template
+     * @since  1.0.0
+     * @return  void
+     */
+    function creativefocus_homepage_content() {
+        while (have_posts()) : the_post();
+
+            get_template_part('content', 'page');
+
+        endwhile; // end of the loop.
+    }
+
+}
+
+if (!function_exists('creativefocus_excerpt_more')) :
+
+    /**
+     * Replaces "[...]" (appended to automatically generated excerpts) with ...
+     * and a Continue reading link.
+     *
+     * @since  1.0.6
+     *
+     * @param string $more Default Read More excerpt link.
+     * @return string Filtered Read More excerpt link.
+     */
+    function creativefocus_excerpt_more( $more ) {
+    
+	$link = sprintf( '<br><a href="%1$s" class="more-link">%2$s</a>',
+		esc_url( get_permalink( get_the_ID() ) ),
+			/* translators: %s: Name of current post */
+			sprintf( __( 'Continue reading %s ', 'creativefocus' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+		);
+	return $link;
+    }
+
+    add_filter('excerpt_more', 'creativefocus_excerpt_more');
+    
+endif;
 
 if (!function_exists('the_archive_title')) :
 
@@ -145,7 +175,7 @@ function creativefocus_categorized_blog() {
             'hide_empty' => 1,
             // We only need to know if there is more than one category.
             'number' => 2,
-                ));
+        ));
 
         // Count the number of categories that are attached to the posts.
         $all_the_cool_cats = count($all_the_cool_cats);

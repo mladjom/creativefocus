@@ -2,7 +2,7 @@
 /**
  * Template functions used for the site footer.
  *
- * @package storefront
+ * @package creativefocus
  */
 
 if ( ! function_exists( 'creativefocus_credit' ) ) {

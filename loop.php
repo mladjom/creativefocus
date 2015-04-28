@@ -5,7 +5,7 @@
  * Included on pages like index.php, archive.php and search.php to display a loop of posts
  * Learn more: http://codex.wordpress.org/The_Loop
  *
- * @package storefront
+ * @package creativefocus
  */
 do_action('creativefocus_loop_before');
 ?>
