@@ -43,7 +43,7 @@ if (!function_exists('creativefocus_excerpt_more')) :
      * Replaces "[...]" (appended to automatically generated excerpts) with ...
      * and a Continue reading link.
      *
-     * @since  1.0.6
+     * @since  1.0.5
      *
      * @param string $more Default Read More excerpt link.
      * @return string Filtered Read More excerpt link.

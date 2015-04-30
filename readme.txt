@@ -3,7 +3,7 @@ Contributors: Mladjo
 Tags: black, white, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, custom-header, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready, accessibility-ready, microformats, translation-ready
 Requires at least: 4.1
 Tested up to: 4.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
