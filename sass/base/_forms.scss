@@ -46,7 +46,9 @@ select[multiple=multiple] {
   }
 
     &:focus {
-        outline: 2px solid $base-link-color;
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
     }
 }
 
