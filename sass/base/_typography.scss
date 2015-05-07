@@ -1,39 +1,39 @@
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=#4.1.0');
-  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=#4.1.0') format('embedded-opentype'),
-    url('../fonts/fontawesome/fontawesome-webfont.woff?v=#4.1.0') format('woff'),
-    url('../fonts/fontawesome/fontawesome-webfont.ttf?v=#4.1.0') format('truetype'),
-    url('../fonts/fontawesome/fontawesome-webfont.svg?v=#4.1.0#fontawesomeregular') format('svg');
-  //src: url('fonts/fontawesome/FontAwesome.otf') format('opentype'); // used when developing fonts
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=#4.1.0');
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=#4.1.0') format('embedded-opentype'),
+        url('../fonts/fontawesome/fontawesome-webfont.woff?v=#4.1.0') format('woff'),
+        url('../fonts/fontawesome/fontawesome-webfont.ttf?v=#4.1.0') format('truetype'),
+        url('../fonts/fontawesome/fontawesome-webfont.svg?v=#4.1.0#fontawesomeregular') format('svg');
+    //src: url('fonts/fontawesome/FontAwesome.otf') format('opentype'); // used when developing fonts
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 300;
-src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nMrfajfqx5pse9BUPMmpr-I.woff) format('woff');
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nMrfajfqx5pse9BUPMmpr-I.woff) format('woff');
 }
 @font-face {
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 400;
-src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/Zd2E9abXLFGSr9G3YK2MsNxB8OB85xaNTJvVSB9YUjQ.woff) format('woff');
 }
 @font-face {
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 700;
-src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(//themes.googleusercontent.com/static/fonts/robotocondensed/v9/b9QBgL0iMZfDSpmcXcE8nPZRQUbYfRc-1FWT9T9EE8M.woff) format('woff');
 }
 body {
-  -webkit-font-smoothing: antialiased;
-  background-color: $base-background-color;
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
+    background-color: $base-background-color;
+    color: $base-font-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
 
 h1,
@@ -42,86 +42,89 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $header-font-family;
-  line-height: $header-line-height;
-  margin: 0 0 0.5em;
-  text-rendering: optimizeLegibility; // Fix the character spacing for headings
-  clear: both;
+    font-family: $header-font-family;
+    line-height: $header-line-height;
+    margin: 0 0 0.5em;
+    text-rendering: optimizeLegibility; // Fix the character spacing for headings
+    clear: both;
 }
 
 h1 {
-  font-size: $h1-font-size;
+    font-size: $h1-font-size;
 }
 
 h2 {
-  font-size: $h2-font-size;
+    font-size: $h2-font-size;
 }
 
 h3 {
-  font-size: $h3-font-size;
+    font-size: $h3-font-size;
 }
 
 h4 {
-  font-size: $h4-font-size;
+    font-size: $h4-font-size;
 }
 
 h5 {
-  font-size: $h5-font-size;
+    font-size: $h5-font-size;
 }
 
 h6 {
-  font-size: $h6-font-size;
+    font-size: $h6-font-size;
 }
 
 p {
-  margin: 0 0 $base-spacing;
+    margin: 0 0 $base-spacing;
 }
 
 a {
-  @include transition(color 0.1s linear);
-  color: $base-link-color;
-  text-decoration: none;
+    @include transition(color 0.1s linear);
+    color: $base-link-color;
+    text-decoration: none;
 
-  &:hover {
-    color: $hover-link-color;
-  }
+    &:hover {
+        color: $hover-link-color;
+    }
 
-  &:active, &:focus {
-    color: $hover-link-color;
-    outline: none;
-  }
+    &:active {
+        color: $hover-link-color;
+        outline: none;
+    }
+    &:focus {
+        outline: 2px solid $base-link-color;
+    }
 }
 
 hr {
-  border-bottom: $base-border;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  margin: $base-spacing 0;
+    border-bottom: $base-border;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: $base-spacing 0;
 }
 
 img,
 picture {
-  margin: 0;
-  max-width: 100%;
-  height: auto;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-spacing 0;
-  padding-left: $base-spacing / 2;
+    border-left: 2px solid $base-border-color;
+    color: lighten($base-font-color, 15);
+    margin: $base-spacing 0;
+    padding-left: $base-spacing / 2;
 }
 
 cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
+    color: lighten($base-font-color, 25);
+    font-style: italic;
 
-  &:before {
-    content: "\2014 \00A0";
-  }
+    &:before {
+        content: "\2014 \00A0";
+    }
 }
 figure {
-	margin: 0;
+    margin: 0;
 }

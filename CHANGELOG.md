@@ -1,3 +1,6 @@
+### 1.0.7: may 6th, 2015
+* CSS tweaks   
+
 ### 1.0.3: april 26th, 2015
 * Prefixed functions
 * Declared licences

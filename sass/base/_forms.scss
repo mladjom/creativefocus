@@ -45,11 +45,9 @@ select[multiple=multiple] {
     border-color: $form-border-color-hover;
   }
 
-  &:focus {
-    border-color: $form-border-color-focus;
-    box-shadow: $form-box-shadow-focus;
-    outline: none;
-  }
+    &:focus {
+        outline: 2px solid $base-link-color;
+    }
 }
 
 textarea {

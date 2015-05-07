@@ -23,18 +23,6 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
-// Colors
-$black: #000000;
-$dark-gray: rgba($black, .87); // $gray-900: #212121;
-$medium-gray: rgba($black, .54); // $gray-600: #757575;
-$light-gray: rgba($black, .26);// $gray-400: #bdbdbd;
-$lighter-gray: #ededed;
-
-$blue: #1976d2;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
-
 // Grey
 $gray-50: #fafafa;
 $gray-100: #f5f5f5;
@@ -49,6 +37,16 @@ $gray-900: #212121;
 $black: #000000;
 $white: #ffffff;
 
+// Colors
+$dark-gray: rgba($black, .87); // $gray-900: #212121;
+$medium-gray: rgba($black, .54); // $gray-600: #757575;
+$light-gray: rgba($black, .26);// $gray-400: #bdbdbd;
+$lighter-gray: $gray-200;
+
+$blue: #0f477f;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
 
 $primary-color: $blue;
 // Background Color

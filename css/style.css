@@ -395,7 +395,7 @@ html {
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #1976d2;
+  background-color: #0f477f;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -407,7 +407,7 @@ input[type="submit"] {
   button:hover,
   input[type="submit"]:hover, button:focus,
   input[type="submit"]:focus {
-    background-color: #11508e;
+    background-color: #07213b;
     color: white; }
   button:disabled,
   input[type="submit"]:disabled {
@@ -501,13 +501,15 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #1976d2;
+  color: #0f477f;
   text-decoration: none; }
   a:hover {
-    color: #11508e; }
-  a:active, a:focus {
-    color: #11508e;
+    color: #07213b; }
+  a:active {
+    color: #07213b;
     outline: none; }
+  a:focus {
+    outline: 2px solid #0f477f; }
 
 hr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.26);
@@ -583,9 +585,7 @@ select[multiple=multiple] {
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #1976d2;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(22, 105, 187, 0.7);
-    outline: none; }
+    outline: 2px solid #0f477f; }
 
 textarea {
   resize: vertical; }
@@ -794,7 +794,7 @@ header.site-header {
       header.site-header .site-branding h1 a, header.site-header .site-branding span.site-title a {
         color: rgba(0, 0, 0, 0.87); }
         header.site-header .site-branding h1 a:hover, header.site-header .site-branding span.site-title a:hover {
-          color: #1976d2;
+          color: #0f477f;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
           transition-duration: 0.2s; }
@@ -851,7 +851,7 @@ header.site-header {
           margin: 0; } }
       @media screen and (min-width: 71.25em) {
         header.site-header nav ul li.current-menu-item > a {
-          color: #1976d2; } }
+          color: #0f477f; } }
       header.site-header nav ul li a {
         display: block;
         padding: 2em 2em;
@@ -866,7 +866,7 @@ header.site-header {
         -moz-transition-duration: 0.2s;
         transition-duration: 0.2s; }
         header.site-header nav ul li a:hover {
-          color: #1976d2;
+          color: #0f477f;
           -webkit-transition-duration: 0.2s;
           -moz-transition-duration: 0.2s;
           transition-duration: 0.2s; }
@@ -941,7 +941,7 @@ header.site-header {
             transition-duration: 0.2s;
             font-weight: 400; }
             header.site-header nav ul li ul li a:hover {
-              color: #11508e;
+              color: #07213b;
               -webkit-transition-duration: 0.2s;
               -moz-transition-duration: 0.2s;
               transition-duration: 0.2s; }
@@ -1042,10 +1042,10 @@ header.site-header {
     display: table;
     clear: both; }
   header.site-header .search-toggle {
-    background-color: #1976d2;
+    background-color: #0f477f;
     cursor: pointer;
     float: right;
-    background-color: #1976d2;
+    background-color: #0f477f;
     border-radius: 3px;
     border: none;
     color: white;
@@ -1057,10 +1057,10 @@ header.site-header {
     background-clip: padding-box;
     margin-top: 1.5em; }
     header.site-header .search-toggle:hover:not(:disabled) {
-      background-color: #1b83e9;
+      background-color: #0e5499;
       cursor: pointer; }
     header.site-header .search-toggle:active:not(:disabled), header.site-header .search-toggle:focus:not(:disabled) {
-      background-color: #1a69b7;
+      background-color: #0f3a66;
       cursor: pointer; }
     header.site-header .search-toggle:disabled {
       opacity: 0.5;
@@ -1086,7 +1086,7 @@ header.site-header {
     width: 100%;
     z-index: 99; }
   header.site-header .search-box {
-    background-color: #1976d2;
+    background-color: #0f477f;
     padding: 12px; }
   header.site-header .search-box .search-field {
     background-color: #fff;
@@ -1096,7 +1096,10 @@ header.site-header {
     padding: 2px 2px 3px 6px;
     width: 100%; }
   header.site-header .search-submit {
-    display: none; }
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important; }
 
 /* =Content
 ----------------------------------------------- */
@@ -1115,7 +1118,7 @@ header.site-header {
   .site-main .taxonomy-description {
     font-size: 1.25em; }
   .site-main .articles {
-    background: #ededed;
+    background: #eeeeee;
     margin: 0 0 3em; }
     .site-main .articles:after {
       content: "";
@@ -1177,18 +1180,18 @@ header.site-header {
       .site-main .articles .entry-header .entry-title > a {
         color: rgba(0, 0, 0, 0.87); }
         .site-main .articles .entry-header .entry-title > a:hover {
-          color: #1976d2; }
+          color: #0f477f; }
     .site-main .articles .sticky {
-      background: #1976d2;
+      background: #0f477f;
       color: white; }
       .site-main .articles .sticky a {
         color: white; }
         .site-main .articles .sticky a:hover {
-          color: #ededed; }
+          color: #eeeeee; }
       .site-main .articles .sticky .entry-header .entry-title > a {
         color: white; }
         .site-main .articles .sticky .entry-header .entry-title > a:hover {
-          color: #ededed; }
+          color: #eeeeee; }
 
 /**
  * Pagination
@@ -1447,7 +1450,10 @@ object {
     padding-left: 2.5em; }
   .widget_search form input[type=submit],
   .widget_product_search form input[type=submit] {
-    display: none; }
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important; }
   .widget_search form:before,
   .widget_product_search form:before {
     content: "\f002";
@@ -1535,7 +1541,7 @@ object {
     font-weight: 400;
     opacity: 0.75; }
     .widget-area .widget a:hover {
-      color: #1976d2;
+      color: #0f477f;
       opacity: 1; }
     .widget-area .widget a.button {
       opacity: 1; }
