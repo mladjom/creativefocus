@@ -1,3 +1,6 @@
+### 1.0.9: may 23rd, 2015
+* Licence
+
 ### 1.0.8: may 6th, 2015
 * CSS tweaks   
 
