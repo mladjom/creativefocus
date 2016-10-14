@@ -9,33 +9,33 @@
 /*--------------------------------------------------------------
 1.0 Normalize/Reset
 --------------------------------------------------------------*/
-@import "partials/normalize";
+@import "partials/_normalize";
 
 /*--------------------------------------------------------------
 2.0 Bourbon, Bitters, Neat
 --------------------------------------------------------------*/
-@import "bourbon/bourbon";
-@import "base/grid-settings";
-@import "neat/neat";
-@import "base/base"; 
+@import "bourbon/_bourbon";
+@import "base/_grid-settings";
+@import "neat/_neat";
+@import "base/_base";
 
 /*--------------------------------------------------------------
 3.0 Layout and Structure
 --------------------------------------------------------------*/
-@import "partials/global";
+@import "partials/_global";
 
-@import "partials/layout";
+@import "partials/_layout";
 
-@import "partials/header";
+@import "partials/_header";
 
-@import "partials/content";
+@import "partials/_content";
 
-@import "partials/media";
+@import "partials/_media";
 
-@import "partials/comments";
+@import "partials/_comments";
 
-@import "partials/widgets";
+@import "partials/_widgets";
 
-@import "partials/accessibility";
+@import "partials/_accessibility";
 
-@import "modules/alerts";
+@import "modules/_alerts";

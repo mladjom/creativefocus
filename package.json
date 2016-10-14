@@ -1,0 +1,38 @@
+{
+    "name": "creativefocus",
+    "version": "1.2.0",
+    "description": "Creativefocus",
+    "main": "Gruntfile.js",
+    "author": {
+        "name": "Mladjo",
+        "url": "http://milentijevic.com"
+    },
+    "license": "GPLv2",
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-banner": "latest",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-compress": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-cssmin": "latest",
+        "grunt-contrib-uglify": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-sass": "latest",
+        "node-sass": "latest",
+        "susy": "latest",
+        "node-bourbon": "latest",
+        "grunt-text-replace": "latest",
+        "grunt-wp-deploy": "latest",
+        "grunt-checktextdomain": "latest",
+        "grunt-wp-i18n": "latest",
+        "load-grunt-tasks": "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mladjom/creativefocus.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mladjom/creativefocus/issues"
+    },
+    "homepage": "https://github.com/mladjom/creativefocus#readme"
+}

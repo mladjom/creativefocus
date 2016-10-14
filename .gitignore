@@ -1,1 +1,9 @@
+### Sass ###
 .sass-cache
+
+### Node ###
+node_modules
+logs
+*.log
+
+release
