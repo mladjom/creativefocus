@@ -200,18 +200,35 @@ module.exports = function (grunt) {
             ]
         },
         sass: {
+            options: {
+                sourceMap: true,
+                includePaths: require('node-neat').includePaths
+            },
             dist: {
-                options: {
-                    sourceMap: true,
-                    require: 'susy',
-                    sourcemap: 'none',
-                    includePaths: require( 'node-bourbon' ).includePaths
-                },
-                files: { 'assets/css/style.css': 'assets/sass/styles.scss' }
+                files: {
+                    'assets/css/style.css': 'assets/sass/style.scss'
+                }
+            },
+        },
+        postcss: {
+            options: {
+                processors: [
+                    require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+                ]
+            },
+            dist: {
+                files: {
+                    'assets/css/style.css': 'assets/css/style.css'
+                }
             }
         },
-        cssmin: { dist: { files: { 'assets/css/style.min.css': 'assets/css/style.css' } } },
-        usebanner: {
+        cssmin: {
+            target: {
+                files: {
+                    'assets/css/style.min.css': 'assets/css/style.css'
+                }
+            }
+        },        usebanner: {
             taskName: {
                 options: {
                     position: 'top',
@@ -241,7 +258,8 @@ module.exports = function (grunt) {
     grunt.registerTask('styles', [
         'sass',
         'cssmin',
-        'usebanner'
+        'usebanner',
+        'postcss'
     ]);
     grunt.registerTask('php', [
         'addtextdomain',
