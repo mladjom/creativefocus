@@ -66,7 +66,7 @@ if (!function_exists('creativefocus_post_meta')) {
                 <span class="comments-link"><?php comments_popup_link(__('Leave a comment', 'creativefocus'), __('1 Comment', 'creativefocus'), __('% Comments', 'creativefocus')); ?></span>
             <?php endif; ?>
 
-            <?php edit_post_link(__('Edit', '_s'), '<span class="edit-link">', '</span>'); ?>
+            <?php edit_post_link(__('Edit', 'creativefocus'), '<span class="edit-link">', '</span>'); ?>
         </aside>
         <?php
     }

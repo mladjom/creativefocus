@@ -50,12 +50,11 @@
         input[type=search] {
             width: 100%;
             padding-left: 2.5em;
+          box-sizing: border-box;
         }
-
         input[type=submit] {
             @include screen-reader-text();
         }
-
         &:before {
             content: "\f002";
             font-family: "FontAwesome";

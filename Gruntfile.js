@@ -59,7 +59,7 @@ module.exports = function (grunt) {
         // Check textdomain errors.
         checktextdomain: {
             options:{
-                text_domain: 'storefront',
+                text_domain: pkg.name,
                 keywords: [
                     '__:1,2d',
                     '_e:1,2d',
@@ -279,8 +279,8 @@ module.exports = function (grunt) {
         'clean:release',
         'replace:readme_txt',
         'copy',
-        'compress',
-        'wp_deploy'
+        'compress'
+        //'wp_deploy'
     ]);
     grunt.util.linefeed = '\n';
 };

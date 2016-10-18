@@ -153,8 +153,6 @@ header.site-header {
         opacity: 0;
         overflow: hidden;
         font-size: 0.875rem;
-        border: 1px solid $base-border-color;
-        border-top: none;
         //box-shadow: 0px 2px 2px rgba(0, 0, 0, .5);
         @include transition-duration(0.3s);
         @include media($large-screen-down) {
@@ -165,8 +163,6 @@ header.site-header {
           overflow: hidden;
           border-top: 1px solid #333;
           border-bottom: none;
-          border-left: none;
-          border-right: none;
           @include transition-duration(2s);
         }
         li {

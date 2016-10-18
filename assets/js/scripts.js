@@ -1,13 +1,15 @@
-/**
- * navigation.js
- *
- * Handles toggling the navigation menu for small screens.
- */
-jQuery(document).ready(function ($) {
+(function ($) {
+    /**
+     * Handles toggling the navigation menu for small screens.
+     */
     $('.menu-toggle').click(function () {
-        $('nav').toggleClass('active');
-   });
-
+        if ($(this).parent().hasClass('toggled')) {
+            $('.toggled').removeClass('toggled');
+        } else {
+            $('.toggled').removeClass('toggled');
+            $(this).parent().addClass('toggled');
+        }
+    });
     $('nav ul li ul').each(function () {
         $(this).before('<span class=\"arrow\"></span>');
     });
@@ -19,7 +21,7 @@ jQuery(document).ready(function ($) {
     // Search toggle.
     $('.search-toggle').on('click', function (event) {
         var that = $(this),
-                wrapper = $('.search-box-wrapper');
+            wrapper = $('.search-box-wrapper');
 
         that.toggleClass('active');
         wrapper.toggleClass('hide');
@@ -28,4 +30,4 @@ jQuery(document).ready(function ($) {
             wrapper.find('.search-field').focus();
         }
     });
-});
+})(jQuery);
