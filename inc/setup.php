@@ -12,7 +12,7 @@ if ( !isset( $content_width ) ) {
 	$content_width = 1140; /* pixels */
 }
 /**
- * Assign the Tilesrus version to a var
+ * Assign a theme version to a var
  */
 $theme = wp_get_theme();
 $creativefocus_version = $theme['Version'];
