@@ -4,7 +4,7 @@
 **Tags:**              one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready, microformats, translation-ready
 **Requires at least:** 4.1
 **Tested up to:**      4.6.1
-**Stable tag:**        1.2.2
+**Stable tag:**        1.2.3
 **License:**           GPLv2
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
