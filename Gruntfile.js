@@ -228,7 +228,8 @@ module.exports = function (grunt) {
                     'assets/css/style.min.css': 'assets/css/style.css'
                 }
             }
-        },        usebanner: {
+        },
+        usebanner: {
             taskName: {
                 options: {
                     position: 'top',

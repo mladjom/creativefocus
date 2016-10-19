@@ -1,6 +1,6 @@
-# WooCommerce Wholesale #
+# Creative Focus #
 **Contributors:**      Mladjo
-**Donate link:**       https://www.tilesrus.se
+**Donate link:**       http://milentijevic.com
 **Tags:**              one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, sticky-post, translation-ready, microformats, translation-ready
 **Requires at least:** 4.1
 **Tested up to:**      4.6.1
@@ -10,7 +10,7 @@
 
 ## Description ##
 
-CreativeFocus is Minimal, Responsive, Developer Friendly WordPress Theme with Clean and Modern Layout. Theme is widget ready, SEO optimized, fast loading, and easy to customize. It features 1, 2 or 3 columns and supports Schema.org microdata format.
+Creative Focus is Minimal, Responsive, Developer Friendly WordPress Theme with Clean and Modern Layout. Theme is widget ready, SEO optimized, fast loading, and easy to customize. It features 1, 2 or 3 columns and supports Schema.org microdata format.
 
 ## Installation ##
 
